@@ -1,0 +1,144 @@
+:root {
+  --bgcolor: #17176b;
+  --fontColor: #ffffff;
+  --bxshadow: 0px 1px 10px cyan;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--bgcolor);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--fontColor);
+}
+a {
+  text-decoration: none;
+  color: var(--fontColor);
+  text-transform: uppercase;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: var(--bxshadow);
+  width: 100%;
+  background-color: inherit;
+  margin-bottom: 30px;
+}
+.logo {
+  flex: 1;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.logo h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    letter-spacing: 3px;
+    text-shadow: 1px 1px white, -1px -1px white;
+    color: goldenrod;
+  }
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 4;
+}
+nav .menu {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  transition: all 0.3 ease-in-out;
+}
+nav .menu a {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: goldenrod;
+    border-bottom: 2px solid goldenrod;
+  }
+}
+
+.logs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.logs a {
+  transition: all 0.3s ease-in;
+  &:hover {
+    background-color: goldenrod;
+    padding: 5px 10px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px cyan, 0px 0px 10px cyan;
+  }
+}
+
+footer {
+  box-shadow: var(--bxshadow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+footer .footCenter {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footCenter img {
+  width: 30px;
+  filter: invert();
+}
+
+footer .footCenter .contacts {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.email,
+.phone {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-weight: 100;
+}
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialBTN {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.socialBTN a {
+  transition: all 0.3s ease-in;
+  &:hover {
+    filter: invert(1);
+    scale: 1.2;
+    filter: drop-shadow(cyan);
+  }
+}
+.contacts a {
+  font-size: 1rem;
+  font-style: italic;
+  text-transform: lowercase;
+  transition: all 0.3s ease-in;
+  &:hover {
+    letter-spacing: 1.5px;
+  }
+}
